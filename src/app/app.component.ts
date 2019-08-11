@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'userdashboard';
+  parentData = "This is parent data goes here...";
+  reciveMessage(event) {
+    console.log(event);
+  }
 }
