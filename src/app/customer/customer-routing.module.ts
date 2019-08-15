@@ -1,11 +1,10 @@
-import { DailywaysComponent } from './dailyways/dailyways.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { SometimesComponent } from './sometimes/sometimes.component';
-
 const routes: Routes = [
-  { path: 'dailyways', component: DailywaysComponent },
-  { path: 'sometimes', component: SometimesComponent }
+  { path: '', redirectTo: 'customer', pathMatch: 'full' },
+  { path: 'customer', component: FeedbackComponent },
 ];
 
 @NgModule({

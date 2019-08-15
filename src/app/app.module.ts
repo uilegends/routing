@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
 
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,11 +17,14 @@ import { ParentComponent } from './parent/parent.component';
     ContactComponent,
     HomeComponent,
     ChildComponent,
-    ParentComponent
+    ParentComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

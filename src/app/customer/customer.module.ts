@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { FeedbackComponent } from './feedback/feedback.component';
 import { CustomerRoutingModule } from './customer-routing.module';
-import { DailywaysComponent } from './dailyways/dailyways.component';
-import { SometimesComponent } from './sometimes/sometimes.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [DailywaysComponent, SometimesComponent],
+  declarations: [FeedbackComponent],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
+    FormsModule,
     CustomerRoutingModule
   ]
 })

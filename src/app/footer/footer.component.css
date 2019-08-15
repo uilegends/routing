@@ -1,0 +1,20 @@
+
+footer.page-footer.font-small.teal.pt-4[_ngcontent-c2] {
+    background: #ddd;
+    color: #000;
+    padding: 24px;
+}
+
+h5.text-uppercase.font-weight-bold {
+    font-weight: 600;
+    font-size: initial;
+}
+
+header.blog-header.py-3 {
+    background: #c1c1c1;
+}
+
+nav.navbar {
+    border: none;
+    border-radius: 0px;
+}
