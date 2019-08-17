@@ -4,9 +4,10 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { CustomerRoutingModule } from './customer-routing.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AlertModule } from 'ngx-alerts';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
-  declarations: [FeedbackComponent],
+  declarations: [FeedbackComponent, SignupComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
