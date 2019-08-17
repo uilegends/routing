@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { AlertService } from 'ngx-alerts';
 
 @Component({
   selector: 'app-feedback',
@@ -11,18 +12,19 @@ import { NgForm } from '@angular/forms';
   `]
 })
 export class FeedbackComponent implements OnInit {
-  constructor() { }
+  constructor(private alertService: AlertService) { }
   ngOnInit() {
   }
 
   OnSubmit(form: NgForm) {
     console.log(form.control.value.firstName);
+    this.alertService.success('Form Submitted Successfully');
     form.resetForm();
 
   }
 
- formReset(form: NgForm) {
-  form.resetForm();
- }
+  formReset(form: NgForm) {
+    form.resetForm();
+  }
 
 }
