@@ -1,3 +1,4 @@
+import { NotfoundComponent } from './notfound/notfound.component';
 import { FeedbackComponent } from './customer/feedback/feedback.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'child', component: ChildComponent },
   { path: 'parent', component: ParentComponent },
-  { path: 'profile', loadChildren: './customer/customer.module#CustomerModule' }
+  { path: 'profile', loadChildren: './customer/customer.module#CustomerModule' },
+  { path: "**", component: NotfoundComponent }
 ];
 
 @NgModule({

@@ -10,6 +10,9 @@ import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     ChildComponent,
     ParentComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
